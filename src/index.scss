@@ -5,5 +5,36 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  // height: 100vh;
+  height: 100vh;
+}
+
+.blue-square {
+  display: flex; //iscentruoti mygtuka viduje
+  justify-content: center; //iscentruoti mygtuka viduje
+  align-items: center; //iscentruoti mygtuka viduje
+  background-color: blue; //suteikti spalva
+  width: 300px; // duoti ploti is auksti
+  height: 300px;
+  margin: 20px;
+}
+
+.red-circle {
+  display: flex; //iscentruoti mygtuka viduje
+  justify-content: center; //iscentruoti mygtuka viduje
+  align-items: center; //iscentruoti mygtuka viduje
+  background-color: red; //suteikti spalva
+  width: 300px; // duoti ploti is auksti
+  height: 300px;
+  border-radius: 50%; //kad butu apskritimas
+  margin: 20px; //kad nebutu susiklijave square su circle
+}
+
+.FourSquares {
+  display: flex; //iscentruoti mygtuka viduje
+  justify-content: center; //iscentruoti mygtuka viduje
+  align-items: center; //iscentruoti mygtuka viduje
+  background-color: blue; //suteikti spalva
+  width: 300px; // duoti ploti is auksti
+  height: 300px;
+  margin: 20px;
 }

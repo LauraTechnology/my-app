@@ -1,29 +1,19 @@
-// import './App.css';
-
-import Box from './Components/Box';
-// import Simple from './Components/Simple';
-
-// const a = 5;
-// const b = 6;
-
-const data = [
-  {
-    ls: '2px',
-    squareColor: 'blue',
-    squareNumber: 68
-  },
-  
-];
-
+import FourSquares from "./Components/FourSquares";
 
 function App() {
-
+  //idedame componenta
   return (
-    <>
-    {data.map((box, index) => <Box key={index} boxColor={box.boxColor} ls={box.ls} boxNumber={box.boxNumber} />)}
-    </>
+    <div>
+        <div className="row">
+      <FourSquares buttonText={"Nr_1"} />
+      <FourSquares buttonText={"Nr_2"} />
+      </div>
+      <div className="row">
+      <FourSquares buttonText={"Nr_3"} />
+      <FourSquares buttonText={"Nr_4"} />
+      </div>
+    </div>
   );
-
 }
 
 export default App;
