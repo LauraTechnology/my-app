@@ -34,6 +34,10 @@ const data = [
   
 ];
 
+/* map'as ''vaziuoja'' per kiekviena komponenta 
+per kiekviena masyvo nari praeinam ir paduodam reiksmes 
+
+*/
 
 function App() {
 

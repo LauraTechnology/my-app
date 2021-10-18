@@ -1,6 +1,6 @@
 
 
-function EightCircles () {
+function EightCircles ({color}) {
 
     return (
         <div className = "eight-circles" style= { {backgroundColor: color} }>
