@@ -139,3 +139,16 @@ button {
     font-size: 40px;
   }
 }
+
+.sq {
+  display: flex; //iscentruoti mygtuka viduje
+  justify-content: center; //iscentruoti mygtuka viduje
+  align-items: center; //iscentruoti mygtuka viduje
+  width: 300px; // duoti ploti is auksti
+  height: 300px;
+  margin: 20px;
+  border: 4px dotted deeppink; //remas
+  transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);//kas leciau keistusi spalva
+}
+
+
