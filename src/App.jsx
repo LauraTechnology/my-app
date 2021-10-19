@@ -1,41 +1,69 @@
 import EightCircles from "./Components/EightCircles";
 
 const data = [
-    {
-      ls: '2px',
-      boxColor: 'green',
-      squareNumber: 68
-    },
-  
-      {
-        ls: '1px',
-        boxColor: 'yellow',
-        boxNumber: 45
-      },
-  
-        {
-          ls: '-2px',
-          boxColor: 'white',
-          boxNumber: 90
-        },
-  
-          {
-            ls: '4px',
-            boxColor: 'pink',
-            boxNumber: 101
-          }
-    
-  ];
+  {
+    ls: "2px",
+    circleColor: "green",
+    circleNumber: 1,
+  },
 
-function App () {
+  {
+    ls: "1px",
+    circleColor: "yellow",
+    circleNumber: 2,
+  },
 
-    return (
-        <div>
-            <EightCircles color = 'green'/>
-        </div>
+  {
+    ls: "-2px",
+    circleColor: "white",
+    circleNumber: 3,
+  },
 
-    );
+  {
+    ls: "4px",
+    circleColor: "pink",
+    circleNumber: 4,
+  },
+  {
+    ls: "2px",
+    circleColor: "green",
+    circleNumber: 5,
+  },
+  {
+    ls: "2px",
+    circleColor: "green",
+    circleNumber: 6,
+  },
+  {
+    ls: "2px",
+    circleColor: "green",
+    circleNumber: 7,
+  },
+  {
+    ls: "2px",
+    circleColor: "green",
+    circleNumber: 8,
+  },
+];
 
+/* map'as ''vaziuoja'' per kiekviena komponenta 
+per kiekviena masyvo nari praeinam ir paduodam reiksmes 
+
+*/
+
+function App() {
+  return (
+    <>
+      {data.map((eightCircles, index) => (
+        <EightCircles
+          key={index}
+          ls={eightCircles.ls}
+          circleColor={eightCircles.circleColor}
+          circleNumber={eightCircles.circleNumber}
+        />
+      ))}
+    </>
+  );
 }
 
 export default App;
