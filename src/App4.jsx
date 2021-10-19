@@ -3,45 +3,45 @@ import EightCircles from "./Components/EightCircles";
 const data = [
   {
     ls: "2px",
-    circleColor: "green",
+    circleColor: "#BE2F11",
     circleNumber: 1,
   },
 
   {
     ls: "1px",
-    circleColor: "yellow",
+    circleColor: "#6495ED",
     circleNumber: 2,
   },
 
   {
     ls: "-2px",
-    circleColor: "white",
+    circleColor: "#DFFF00",
     circleNumber: 3,
   },
 
   {
     ls: "4px",
-    circleColor: "pink",
+    circleColor: "#FFBF00",
     circleNumber: 4,
   },
   {
     ls: "2px",
-    circleColor: "green",
+    circleColor: "#FF7F50",
     circleNumber: 5,
   },
   {
     ls: "2px",
-    circleColor: "green",
+    circleColor: "#40E0D0",
     circleNumber: 6,
   },
   {
     ls: "2px",
-    circleColor: "green",
+    circleColor: "#9FE2BF",
     circleNumber: 7,
   },
   {
     ls: "2px",
-    circleColor: "green",
+    circleColor: "#BE2F11",
     circleNumber: 8,
   },
 ];

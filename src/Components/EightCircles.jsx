@@ -4,15 +4,12 @@ function EightCircles ({ls, circleColor, circleNumber}) {
 
     return (
 
-        <div className = "eight-circles" >
+        <div className = "eight-circles" style={{backgroundColor: circleColor}}>
             <span style= {{
                 
-                letterSPacing: ls,
-                color: circleColor,
+                letterSpacing: ls,
+                backgroundColor: circleColor,
                 number: circleNumber
-            
-            
-            
             
             }}>This is hexColorCode circle # {circleNumber}</span>
             
