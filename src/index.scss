@@ -151,4 +151,21 @@ button {
   transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);//kas leciau keistusi spalva
 }
 
+.zone{
+  display: flex; //iscentruoti mygtuka viduje
+  justify-content: space-between; //iscentruoti mygtuka viduje
+  align-items: flex-start; //iscentruoti mygtuka viduje
+    .zone-show {
+      width: 70vw;
+      height: 100vh;
+      overflow-y: scroll;
+      padding: 40px;
+    }
+    .zone-enter {
+      width: 30vw;
+      height: 100vh;
+      background-color: lightgreen;
+
+    }
+}
 
