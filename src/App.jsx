@@ -20,10 +20,14 @@ function App() {
     return (
         <div className="field">
         <div>
-                {field.map((fieldAnimal, i) => <FieldAnimal key={i} fieldAnimal={fieldAnimal}></FieldAnimal>)}
+                {field.map((fieldAnimal, i) => 
+                <FieldAnimal key={i} fieldAnimal={fieldAnimal}>
+                    
+                </FieldAnimal>)}
         </div>
-                <button> onClick={() => add('cow')}>Add cow</button>
-                <button> onClick={() => add('sheep')}>Add sheep</button>
+                <button onClick={() => add('cow')} > Add cow </button>
+                <button onClick={() => add('sheep')} > Add sheep </button>
+                <button onClick={() => add('horse')} > Add horse </button>
 
 
         </div>
