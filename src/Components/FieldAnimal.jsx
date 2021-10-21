@@ -1,7 +1,7 @@
 
 
 function FieldAnimal ({ fieldAnimal}) {
-
+/* CONDITIONAL RENDERING */
     if ('cow' === fieldAnimal.animal) {
         return (
             <div className="cow">
