@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 
-function button8() {
+function Button8() {
 
     return (
         <>
@@ -15,4 +15,4 @@ function button8() {
 
 }
 
-export default button8;
+export default Button8;
