@@ -206,3 +206,12 @@ div {
   }
 }
 }
+
+.balloon {
+  position: absolute;
+  background-color: red; //suteikti spalva
+  width: 80px; // duoti ploti is auksti
+  height: 110px;
+  border-radius: 50%; //kad butu apskritimas
+  margin: 30px; //kad nebutu susiklijave square su circle
+}
