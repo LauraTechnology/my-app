@@ -22,3 +22,4 @@ export default Balloon;
 
 // susikurti state Componente 'Balloon'
 //
+//height, setHeight, false, setFales; jeigu true, tada display
