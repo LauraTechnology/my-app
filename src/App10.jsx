@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import FieldAnimal from "./Components/FieldAnimal";
 import idGenerator from "./Common/idGenerator";
 
@@ -7,6 +7,32 @@ function App() {
 
     const [field, setField] = useState([]);
     const [fieldNamber, setFieldNamber] = useState(1);
+    const [weight, setWeight] = useState('');
+    const [fieldType, setFieldType] = useState('cow');
+    🚧 
+    const allAnimals = useRef(0);
+    const types = useRef({cow:0, sheep:0, horse:0});
+    const total = useRef(0)
+
+    const handleWeight = e => {
+        setWeight(e.target.value);
+    }
+
+    const selectfieldType = e => {
+        setFieldType(e.target.value);
+    }
+
+    const stats = (fieldCopy) => {
+        allAnimals.current = fieldCopy.length;
+        types.current = {cow:0, sheep:0, horse:0};
+        total.current = 0;
+        fieldCopy.forEach(a => {
+            types.current[a.animal]++;
+            total.current += parseFloat(a.weight);
+        })
+    }
+
+
 
     const add = (what) => {
         const fieldCopy = field.slice();
