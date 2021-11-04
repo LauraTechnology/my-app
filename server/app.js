@@ -6,7 +6,6 @@ const cors = require('cors')
 app.use(cors())
 
 
-
 app.use(express.urlencoded({
 extended: true
 }))
@@ -14,9 +13,8 @@ app.use(express.json());
 
 const con = mysql.createConnection({
   host: "localhost",
-  user: "zoo",
+  user: "root",
   password: "root",
-  database: "zoo"
 });
 
 con.connect(function(err) {
@@ -24,8 +22,14 @@ con.connect(function(err) {
   console.log("Connected!");
 });
 
+//Routing
 app.get('/', (req, res) => {
   res.send('Labas, kur tu?! Kada grysi')
+})
+
+//req REQUEST, res RESPOND - abut strings (tekstiniai)
+app.get('/labas/:id', (req, res ) => {
+  res.send(`Pats tu ${req.params.id}.`)
 })
 
 app.listen(port, () => {
