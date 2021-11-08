@@ -16,7 +16,7 @@ const con = mysql.createConnection({
   host: "localhost",
   user: "root",
   password: "root",
-  database: "zoo"
+  database: "zoo",
 });
 
 con.connect(function (err) {
@@ -35,7 +35,7 @@ app.get("/labas/:id ", (req, res) => {
 });
 
 app.get("/test", (req, res) => {
-  res.send(JSON.stringify({ test: 'OK' }));
+  res.send(JSON.stringify({ test: "OK" }));
 });
 
 // Visi gyvunai
@@ -47,10 +47,9 @@ app.get("/animals", (req, res) => {
   con.query(sql, (err, results) => {
     if (err) {
       throw err;
-    }
-    res.send(results);
-  })
-  res.send(JSON.stringify({ test: 'OK' }));
+    } else {res.send(results)};
+  });
+//  res.send(JSON.stringify({ test: "OK" })); - cia buvom pasirase, kad pabandyti ar veikia.
 });
 
 app.listen(port, () => {
