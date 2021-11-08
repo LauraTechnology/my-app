@@ -1,8 +1,11 @@
 .zoo {
+    background-color: burlywood;
+    min-width: 100vw;
+    min-height: 100vh;
     &__list{
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-between;
+        align-items: flex-start;
         flex-wrap: wrap;
         padding: 10px;
         &__animal {
@@ -11,8 +14,12 @@
             align-items: center;
             flex-direction: column; // sudeliot viska stulpeliu
             padding: 5px;
-            border: 3px solid springgreen;
+            border: 3px solid saddlebrown;
             border-radius: 3px; //paapvalinti kraštus
+            max-width: 2000px; //responsive design
+            min-width: 320px; //responsive design
+            margin: 10px;
+            box-sizing: border-box;
         }
     }
 }
