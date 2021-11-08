@@ -1,3 +1,5 @@
+//render names
+
 import ZooAnimal from "./ZooAnimal";
 
 function ZooList({animals}) {

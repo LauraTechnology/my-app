@@ -1,4 +1,4 @@
-
+//render names
 
 function ZooAnimal({animal}) {
 
