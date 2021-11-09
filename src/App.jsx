@@ -1,28 +1,11 @@
-import axios from "axios";
-import { useEffect, useState } from "react";
-import ZooList from "./Components/ZooList";
 
-function App() {
 
-    //hook'as
-    const [animals, setAnimals] = useState([]); //default'inis yra tuscias masyvas t.y. default'e (pradiniame) mes neturime jokiu animal'u
+function App () {
 
-    useEffect(() => {
-        axios.get('http://localhost:3003/animals')
-        .then(res => {
-            setAnimals(res.data);
-            console.log(res.data);
-
-        })
-    }, [])
-
-    //visa aplikacija apskliausta su className zoo
-    //renderinam Zoolist. Norint renderinti Zoolist, mums reikia perduoti ZooAnimals
-    return(
-        <div className="zoo"> 
-        <ZooList animals={animals}></ZooList> 
-
-        </div>
+    return (
+        <Router>
+            Hello there!
+        </Router>
     )
 }
 
