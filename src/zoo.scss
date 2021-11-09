@@ -1,5 +1,5 @@
 .zoo {
-    background-color: burlywood;
+    background-color: lightgoldenrodyellow;
     min-width: 100vw;
     min-height: 100vh;
     &__list{
@@ -14,7 +14,7 @@
             align-items: center;
             flex-direction: column; // sudeliot viska stulpeliu
             padding: 5px;
-            border: 3px solid brown;
+            border: 3px solid grey;
             border-radius: 3px; //paapvalinti kraštus
             max-width: 2000px; //responsive design
             min-width: 320px; //responsive design
@@ -25,23 +25,25 @@
                 color: green;
                 font-size: 30px;
                 text-align: center;
-                padding: 0 0 20px 0;
+                padding: 0 0 0 0;
             }
             &__type {
-                color: lightcyan;
-                font-size: 20px;
+                color: black;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 15px;
                 text-align: center;
-                padding: 0 0 0 0;
+                padding: 0 0 20px 0;
             }
             &__stats {
                 display: flex;
                 justify-content: flex-start; //virsuj
                 align-items: flex-start;//šone
                 flex-direction: column;//kas stulepliu butu surasyta
-                color: lightyellow;
+                color: rgb(190, 153, 153);
                 font-size: 18px;
                 text-align: center;
                 padding: 0 0 0 0;
+                width: 100%;
                 span {
                     i{
                         font-size: 15px;
