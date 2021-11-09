@@ -14,12 +14,44 @@
             align-items: center;
             flex-direction: column; // sudeliot viska stulpeliu
             padding: 5px;
-            border: 3px solid saddlebrown;
+            border: 3px solid brown;
             border-radius: 3px; //paapvalinti kraštus
             max-width: 2000px; //responsive design
             min-width: 320px; //responsive design
             margin: 10px;
             box-sizing: border-box;
+            margin: 10px;
+            &__name {
+                color: green;
+                font-size: 30px;
+                text-align: center;
+                padding: 0 0 20px 0;
+            }
+            &__type {
+                color: lightcyan;
+                font-size: 20px;
+                text-align: center;
+                padding: 0 0 0 0;
+            }
+            &__stats {
+                display: flex;
+                justify-content: flex-start; //virsuj
+                align-items: flex-start;//šone
+                flex-direction: column;//kas stulepliu butu surasyta
+                color: lightyellow;
+                font-size: 18px;
+                text-align: center;
+                padding: 0 0 0 0;
+                span {
+                    i{
+                        font-size: 15px;
+                        color: darkblue;
+                        font-family:'Courier New', Courier, monospace;
+                    }
+                    
+                
+                }
+            }
         }
     }
 }
