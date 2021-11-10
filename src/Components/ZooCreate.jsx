@@ -21,16 +21,16 @@ function ZooCreate({ create }) {
     
       <div className="zoo__create">
       <div className="zoo__create__input">
-      <input type="text" value={inputs.name} onChange={(e) => formControl(e, 'name')}/>
+      <span>Name</span><input type="text" value={inputs.name} onChange={(e) => formControl(e, 'name')}/>
       </div>
       <div className="zoo__create__input">
-      <input type="text" value={inputs.type} onChange={(e) => formControl(e, 'type')}/>
+      <span>Type</span><input type="text" value={inputs.type} onChange={(e) => formControl(e, 'type')}/>
       </div>
       <div className="zoo__create__input">
-      <input type="text" value={inputs.weight} onChange={(e) => formControl(e, 'weight')}/>
+      <span>Weight</span><input type="text" value={inputs.weight} onChange={(e) => formControl(e, 'weight')}/>
       </div>
       <div className="zoo__create__input">
-      <input type="text" value={inputs.date} onChange={(e) => formControl(e, 'date')}/>
+      <span>Born date</span><input type="text" value={inputs.date} onChange={(e) => formControl(e, 'date')}/>
       </div>
     </div>
   );
