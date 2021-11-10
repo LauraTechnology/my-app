@@ -50,10 +50,23 @@
                         color: darkblue;
                         font-family:'Courier New', Courier, monospace;
                     }
-                    
-                
+    
                 }
             }
         }
+    }
+    &__create {
+        display: flex;
+                justify-content: flex-start; //virsuj
+                align-items: flex-start;//šone
+                flex-direction: column;//kas stulepliu butu surasyta
+                background: rgb(234, 241, 165);
+                margin: 20px;
+                padding: 10px;
+                box-sizing: border-box;//kad nebutu baltos linijos virsuje
+                &__input {
+
+                }
+
     }
 }
