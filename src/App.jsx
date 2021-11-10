@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import ZooCreate from "./Components/ZooCreate";
 import ZooList from "./Components/ZooList";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
     //renderinam Zoolist. Norint renderinti Zoolist, mums reikia perduoti ZooAnimals
     return(
         <div className="zoo"> 
+        <ZooCreate></ZooCreate>
         <ZooList animals={animals}></ZooList> 
 
         </div>
