@@ -1,73 +1,92 @@
 .zoo {
-    background-color: lightgoldenrodyellow;
-    min-width: 100vw;
-    min-height: 100vh;
-    &__list{
+  background-color: lightgoldenrodyellow;
+  min-width: 100vw;
+  min-height: 100vh;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 10px;
+    &__animal {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; // sudeliot viska stulpeliu
+      padding: 5px;
+      border: 3px solid grey;
+      border-radius: 3px; //paapvalinti kraštus
+      max-width: 2000px; //responsive design
+      min-width: 320px; //responsive design
+      margin: 10px;
+      box-sizing: border-box;
+      margin: 10px;
+      &__name {
+        color: green;
+        font-size: 30px;
+        text-align: center;
+        padding: 0 0 0 0;
+      }
+      &__type {
+        color: black;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 15px;
+        text-align: center;
+        padding: 0 0 20px 0;
+      }
+      &__stats {
         display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        padding: 10px;
-        &__animal {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column; // sudeliot viska stulpeliu
-            padding: 5px;
-            border: 3px solid grey;
-            border-radius: 3px; //paapvalinti kraštus
-            max-width: 2000px; //responsive design
-            min-width: 320px; //responsive design
-            margin: 10px;
-            box-sizing: border-box;
-            margin: 10px;
-            &__name {
-                color: green;
-                font-size: 30px;
-                text-align: center;
-                padding: 0 0 0 0;
-            }
-            &__type {
-                color: black;
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
-                font-size: 15px;
-                text-align: center;
-                padding: 0 0 20px 0;
-            }
-            &__stats {
-                display: flex;
-                justify-content: flex-start; //virsuj
-                align-items: flex-start;//šone
-                flex-direction: column;//kas stulepliu butu surasyta
-                color: rgb(190, 153, 153);
-                font-size: 18px;
-                text-align: center;
-                padding: 0 0 0 0;
-                width: 100%;
-                span {
-                    i{
-                        font-size: 15px;
-                        color: darkblue;
-                        font-family:'Courier New', Courier, monospace;
-                    }
-    
-                }
-            }
+        justify-content: flex-start; //virsuj
+        align-items: flex-start; //šone
+        flex-direction: column; //kas stulepliu butu surasyta
+        color: rgb(190, 153, 153);
+        font-size: 18px;
+        text-align: center;
+        padding: 0 0 0 0;
+        width: 100%;
+        span {
+          i {
+            font-size: 15px;
+            color: darkblue;
+            font-family: "Courier New", Courier, monospace;
+          }
         }
+      }
     }
-    &__create {
-        display: flex;
-                justify-content: flex-start; //virsuj
-                align-items: flex-start;//šone
-                background: rgb(234, 241, 165);
-                margin: 20px;
-                padding: 10px;
-                box-sizing: border-box;//kad nebutu baltos linijos virsuje
-                &__input {
-                    width: 50%;
-                    margin-top: 10px;
-
-                }
-
+  }
+  &__create {
+    display: flex;
+    justify-content: flex-start; //virsuj
+    align-items: flex-start; //šone
+    background: rgb(234, 241, 165);
+    box-sizing: border-box; //kad nebutu baltos linijos virsuje
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+    h2 {
+        width: 100vw;
+        margin-bottom: 0;
+        text-align: center;
+        font-size: 22px;
+        color: lightcoral;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
+    &__input {
+      width: 50%;
+      margin: 10px 0;
+      span {
+        display: inline-block;
+        width: 15%;
+        padding: 0 0 0 20px;
+        color: rgb(122, 120, 120);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      input {
+          border: none;
+          outline: none;
+      }
+      button {
+          margin-left: 15px;
+      }
+    }
+  }
 }
