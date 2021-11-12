@@ -14,6 +14,7 @@ function ZooAnimal({ animal }) {
           {animal.weight}
         </span>
       </div>
+      <button>Edit</button>
     </div>
   );
 }
