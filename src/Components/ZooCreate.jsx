@@ -22,6 +22,12 @@ function ZooCreate({ create }) {
 
   const handleCreate = () => {
     create(inputs);
+    setInputs({
+      name: '',
+      type: '',
+      weight: '',
+      date: ''
+    })
   }
 
   return (
