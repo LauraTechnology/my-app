@@ -17,9 +17,15 @@ function ZooCreate({ create }) {
     inputsCopy[what] = e.target.value;
     setInputs(inputsCopy);
   }
+
+  const handleCreate = () => {
+    create(inputs);
+  }
+
   return (
     
       <div className="zoo__form">
+        <h2>Add new animal</h2>
       <div className="zoo__form__input">
       <span>Name</span><input type="text" value={inputs.name} onChange={(e) => formControl(e, 'name')}/>
       </div>
@@ -30,10 +36,10 @@ function ZooCreate({ create }) {
       <span>Weight</span><input type="text" value={inputs.weight} onChange={(e) => formControl(e, 'weight')}/>
       </div>
       <div className="zoo__form__input">
-      <span>Born date</span><input type="text" value={inputs.date} onChange={(e) => formControl(e, 'date')}/>
+      <span>Born date</span><input type="date" value={inputs.date} onChange={(e) => formControl(e, 'date')}/>
       </div>
       <div className="zoo__form__input">
-        <button>Add</button>
+        <button onClick={handleCreate}>Add</button>
       </div>
     </div>
   );

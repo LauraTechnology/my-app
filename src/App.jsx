@@ -20,9 +20,8 @@ function App() {
 
     //pots metodas - kriepiames i visus, idedame viena animal
     const create = animal => {
-        axios.post('http://localhost:3003/animals')
+        axios.post('http://localhost:3003/animals', animal)
         .then(res => {
-            setAnimals(res.data);
             console.log(res.data);
 
         })
@@ -32,7 +31,7 @@ function App() {
     //renderinam Zoolist. Norint renderinti Zoolist, mums reikia perduoti ZooAnimals
     return(
         <div className="zoo"> 
-        <ZooCreate></ZooCreate>
+        <ZooCreate create={create}></ZooCreate>
         <ZooList animals={animals}></ZooList> 
 
         </div>

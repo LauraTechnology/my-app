@@ -52,6 +52,27 @@ app.get("/animals", (req, res) => {
 //  res.send(JSON.stringify({ test: "OK" })); - cia buvom pasirase, kad pabandyti ar veikia.
 });
 
+// Prideti gyvuna
+// INSERT INTO table_name (column1, column2, column3, ...)
+// VALUES (value1, value2, value3, ...);
+app.post("/animals", (req, res) => {
+  const sql = `
+    INSERT INTO animals
+    (name, type, weight, date)
+    VALUES (?, ?, ?, ?)
+  `;
+  con.query(sql, [
+    req.body.name,
+    req.body.type,
+    req.body.weight,
+    req.body.date
+   ], (err, results) => {
+    if (err) {
+      throw err;
+    } else {res.send(results)};
+  });
+});
+
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 });
