@@ -1,6 +1,13 @@
 //render names
 // stats - statistika
-function ZooAnimal({ animal }) {
+function ZooAnimal({ animal, modal }) {
+
+  //kai paspaudziam showEdit, mums turetu islysti showModal
+  const showEdit = () => {
+    modal()
+  }
+
+
   return (
     <div className="zoo__list__animal">
       <div className="zoo__list__animal__name">{animal.name}</div>
@@ -14,7 +21,7 @@ function ZooAnimal({ animal }) {
           {animal.weight}
         </span>
       </div>
-      <button>Edit</button>
+      <button onClick={showEdit}>Edit</button>
     </div>
   );
 }
