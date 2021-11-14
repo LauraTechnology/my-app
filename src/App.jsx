@@ -38,7 +38,7 @@ function App() {
     <div className="zoo">
       <ZooCreate create={create}></ZooCreate>
       <ZooList animals={animals} modal={modal}></ZooList>
-      <ZooModal showModal={showModal}></ZooModal>
+      <ZooModal modal={modal}></ZooModal>
     </div>
   );
 }

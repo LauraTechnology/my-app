@@ -4,7 +4,7 @@ function ZooAnimal({ animal, modal }) {
 
   //kai paspaudziam showEdit, mums turetu islysti showModal
   const showEdit = () => {
-    modal()
+    modal(animal)
   }
 
 
