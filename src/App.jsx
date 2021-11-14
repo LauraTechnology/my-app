@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import ZooCreate from "./Components/ZooCreate";
 import ZooList from "./Components/ZooList";
 import ZooModal from "./Components/ZooModal";
+import ZooAnimal from "./Components/ZooAnimal";
 
 function App() {
   //hook'as
@@ -39,6 +40,7 @@ function App() {
       <ZooCreate create={create}></ZooCreate>
       <ZooList animals={animals} modal={modal}></ZooList>
       <ZooModal modal={modal}></ZooModal>
+      <ZooAnimal modal={modal}></ZooAnimal>
     </div>
   );
 }
